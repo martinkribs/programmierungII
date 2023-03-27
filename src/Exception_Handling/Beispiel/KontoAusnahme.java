@@ -2,10 +2,10 @@ package Exception_Handling.Beispiel;
 
 public class KontoAusnahme extends Exception {
 
-	public KontoAusnahme() {
-	}
+    public KontoAusnahme() {
+    }
 
-	public KontoAusnahme(String message) {
-		super(message);
-	}
+    public KontoAusnahme(String message) {
+        super(message);
+    }
 }
