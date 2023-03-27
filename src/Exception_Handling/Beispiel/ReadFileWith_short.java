@@ -1,4 +1,4 @@
-package ProgrammierungII.ExceptionHandling;
+package Exception_Handling.Beispiel;
 
 import java.io.File;
 import java.io.FileNotFoundException;

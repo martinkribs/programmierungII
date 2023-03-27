@@ -1,4 +1,4 @@
-package exceptionDemos;
+package Exception_Handling.Beispiel;
 
 public class KontoAusnahme extends Exception {
 

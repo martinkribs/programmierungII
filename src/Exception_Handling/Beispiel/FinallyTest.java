@@ -1,4 +1,4 @@
-package exceptionDemos;
+package Exception_Handling.Beispiel;
 
 public class FinallyTest {
 	public static void main(String[] args) {
@@ -27,7 +27,7 @@ public class FinallyTest {
 				System.out.println();
 			}
 		} catch (KontoAusnahme e) {
-			System.out.println("Äußerer catch-Block");
+			System.out.println("ï¿½uï¿½erer catch-Block");
 			System.out.println(e);
 		}
 	}

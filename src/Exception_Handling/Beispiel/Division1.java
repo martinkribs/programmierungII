@@ -1,4 +1,4 @@
-package exceptionDemos;
+package Exception_Handling.Beispiel;
 
 public class Division1 {
 	public static void main(String[] args) {
