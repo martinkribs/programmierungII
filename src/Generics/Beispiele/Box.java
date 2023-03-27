@@ -1,14 +1,14 @@
 package Generics.Beispiele;
 
 public class Box {
-	private Object value;
+    private Object value;
 
-	public void setValue(Object value) {
+    public void setValue(Object value) {
 		this.value = value;
-	}
+    }
 
-	public Object getValue() {
+    public Object getValue() {
 		return value;
-	}
+    }
 
 }
