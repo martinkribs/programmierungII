@@ -1,4 +1,4 @@
-package Exception_Handling.Beispiel;
+package Exception_Handling.Beispiele;
 
 public class FinallyTest {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package Exception_Handling.Beispiel;
+package Exception_Handling.Beispiele;
 
 public class Konto {
     private int kontonummer;
