@@ -1,5 +1,7 @@
 package Generics.Beispiele;
 
+import Generics.Uebungen.M_Box;
+
 public class TestGenerischeMethoden {
     public static void main(String[] args) {
 		

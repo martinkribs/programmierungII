@@ -1,4 +1,7 @@
 package Generics.Uebungen;
 
-public class Markierbar {
+public interface Markierbar<S> {
+    void setMarke(S m);
+
+    S getMarke();
 }

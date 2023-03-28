@@ -1,5 +1,7 @@
 package Generics.Beispiele;
 
+import Generics.Uebungen.M_Box;
+
 public class Utils {
 	
 	public static <T> void print(M_Box<T> a) {
