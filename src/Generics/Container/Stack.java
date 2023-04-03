@@ -5,34 +5,22 @@ import java.util.ArrayList;
 public class Stack<T> extends ArrayList<T> {
 
     /**
-     * ArrayList
-     */
-    ArrayList<T> stack;
-
-    /**
-     * Stack
-     */
-    public Stack() {
-        this.stack = new ArrayList<>();
-    }
-
-    /**
      * liefert true, wenn der Stack leer ist, ansonsten false.
      *
      * @return bool
      */
     public boolean empty() {
-        return this.stack == null;
+        return this.size() == 0;
     }
 
     /**
      * legt item oben auf den Stack und gibt item zurück.
      *
-     * @param item
+     * @param item item
      * @return T
      */
     public T push(T item) {
-        this.stack.add(item);
+        this.add(item);
         return item;
     }
 
@@ -43,7 +31,7 @@ public class Stack<T> extends ArrayList<T> {
      */
     public T pop() {
         T item = this.peek();
-        this.stack.remove(item);
+        this.remove(item);
         return item;
     }
 
@@ -53,6 +41,7 @@ public class Stack<T> extends ArrayList<T> {
      * @return T
      */
     public T peek() {
-        return this.stack.get(this.stack.size() - 1);
+        int index = this.size();
+        return this.get(index - 1);
     }
 }
