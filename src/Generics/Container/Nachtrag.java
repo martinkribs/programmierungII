@@ -11,7 +11,7 @@ public class Nachtrag {
         Random random = new Random();
 
         while (numbers.size() < 6) {
-            int n = random.nextInt(1, 50);
+            int n = random.nextInt(49)+1;
             Klasse klasse = new Klasse(n);
             numbers.add(klasse);
         }

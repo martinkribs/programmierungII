@@ -13,7 +13,7 @@ public class Lotto {
 
         System.out.println("Ziehung der Lottozahlen - 6 aus 49");
         while (numbers.size() < 6) {
-            int n = random.nextInt(1, 50);
+            int n = random.nextInt(49)+1;
             numbers.add(n);
         }
         System.out.println(Arrays.toString(numbers.toArray()));
