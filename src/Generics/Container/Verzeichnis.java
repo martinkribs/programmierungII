@@ -49,10 +49,7 @@ public class Verzeichnis {
 
 	public static void german() {
 		Set<String> german = woerterbuch.keySet();
-		List<String> sortedList = new ArrayList<String>();
-		for (String word : german) {
-			sortedList.add(word);
-		}
+		List<String> sortedList = new ArrayList<String>(german);
 		Collections.sort(sortedList);
 		System.out.println(sortedList);
 	}
