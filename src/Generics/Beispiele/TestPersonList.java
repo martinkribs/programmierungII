@@ -7,12 +7,12 @@ import java.util.List;
 
 public class TestPersonList {
     public static void main(String[] args) {
-        final List personList = new ArrayList();
+        final List<Person> personList = new ArrayList<>();
         personList.add(new Person("Adam", "Aschaffenburg"));
         personList.add(new Person("Martha", "Mainz"));
-        personList.add(new Dog("Terrier"));
+        // personList.add(new Dog("Terrier"));
 
-        for (int i=0; i < personList.size(); i++) {
+        for (int i = 0; i < personList.size(); i++) {
             final Person person = (Person) personList.get(i);
             System.out.println(person.getName() + person.getCity());
         }

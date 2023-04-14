@@ -6,4 +6,8 @@ public class Dog {
     public Dog(String race) {
         this.race = race;
     }
+
+    public String getRace(){
+        return this.race;
+    }
 }

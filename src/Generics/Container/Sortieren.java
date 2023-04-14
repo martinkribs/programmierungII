@@ -15,7 +15,20 @@ public class Sortieren {
 
         System.out.println(personList);
 
-        personList.sort(Comparator.comparingInt(String::length));
+        Comparator<String> comp = new Comparator<>() {
+            @Override
+            public int compare(String o1, String o2) {
+                if (o1.length()<o2.length()){
+                    return -1;
+                } else if(o1.length()== o2.length()){
+                    return 0;
+                } else {
+                    return 1;
+                }
+            } 
+        };
+
+        personList.sort(comp);
 
         System.out.println(personList);
     }
