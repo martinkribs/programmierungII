@@ -57,6 +57,7 @@ public class Verzeichnis {
 	public static void english() {
 		Collection<String> english = woerterbuch.values();
 		List<String> list = new ArrayList<String>(english);
+		//fjmseohjfto9es
 		System.out.println(list);
 	}
 
