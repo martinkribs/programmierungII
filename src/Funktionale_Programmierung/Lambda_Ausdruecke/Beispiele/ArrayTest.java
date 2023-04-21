@@ -3,6 +3,8 @@ package Funktionale_Programmierung.Lambda_Ausdruecke.Beispiele;
 import java.util.function.BinaryOperator;
 
 public class ArrayTest {
+	
+	@SafeVarargs
 	public static <T> T fold(BinaryOperator<T> op, T first, T... items) {
 		T result = first;
 		for (T item : items) {
