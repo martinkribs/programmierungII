@@ -20,6 +20,5 @@ public class TestArtikel {
     public static void filter(Artikel[] Lager, Predicate<Artikel> kriterium) {
         Stream<Artikel> stream = Arrays.stream(Lager).filter(kriterium)
             .peek(s -> System.out.println("Filtered value: " + s));
-
     }
 }
