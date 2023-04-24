@@ -1,7 +1,9 @@
 package Funktionale_Programmierung.Streams.Uebungen;
 
 import java.util.Arrays;
+import java.util.Objects;
 import java.util.function.Predicate;
+import java.util.stream.Stream;
 
 public class TestArtikel {
     public static void main(String[] args) {
@@ -11,11 +13,13 @@ public class TestArtikel {
                 new Artikel(3, 65.34, "Schmuck", 1)
         };
         filter(Lager, ((x) -> {
-            return true;
+            return (Objects.equals(x.getWarengruppe(), "Obst")) && x.getLagebestand() > 2;
         }));
     }
 
     public static void filter(Artikel[] Lager, Predicate<Artikel> kriterium) {
-        System.out.println(Arrays.stream(Lager).filter(kriterium));
+        Stream<Artikel> stream = Arrays.stream(Lager).filter(kriterium)
+            .peek(s -> System.out.println("Filtered value: " + s));
+
     }
 }
