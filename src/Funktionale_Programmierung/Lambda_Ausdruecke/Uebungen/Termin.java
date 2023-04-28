@@ -37,6 +37,7 @@ public class Termin {
         this.zeit = zeit;
     }
 
+    @Override
     public String toString() {
         return "Was? " + this.beschreibung + ", Wo? " + this.ort + ", Wann? " + this.zeit.getTime();
     }

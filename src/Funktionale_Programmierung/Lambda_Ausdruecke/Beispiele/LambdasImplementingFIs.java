@@ -2,7 +2,7 @@ package Funktionale_Programmierung.Lambda_Ausdruecke.Beispiele;
 
 public class LambdasImplementingFIs {
     public static void main(String[] args) {
-        X myX = (() -> System.out.println("Lambda says Hello World!"));
+        //X myX = (() -> System.out.println("Lambda says Hello World!"));
         Y myY = ((a) -> {return (double)a/2;});
         calcY(myY, 5);
         // Z myZ = ,

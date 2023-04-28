@@ -6,7 +6,7 @@ import java.util.Objects;
 import java.util.function.Predicate;
 
 public class TestTermin {
-    public void main(String[] args) {
+    public static void main(String[] args) {
 
         Calendar calendar = Calendar.getInstance();
         Calendar calendar1 = Calendar.getInstance();
@@ -22,10 +22,10 @@ public class TestTermin {
         for (Termin datum : Termine) {
             System.out.println(datum);
         }
-        this.printTermine(Termine, (x) -> Objects.equals(x.getOrt(), "München"));
+        printTermine(Termine, (x) -> Objects.equals(x.getOrt(), "München"));
     }
 
-    void printTermine(Termin[] termine, Predicate<Termin> kriterium) {
+    public static void printTermine(Termin[] termine, Predicate<Termin> kriterium) {
         System.out.println(Arrays.stream(termine).filter(kriterium));
     }
 }
