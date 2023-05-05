@@ -1,5 +1,6 @@
 package Funktionale_Programmierung.Streams.Uebungen;
 
+import java.util.Arrays;
 import java.util.List;
 
 public class PersonList {
@@ -9,8 +10,6 @@ public class PersonList {
                 .map(x -> x.getName().toUpperCase())
                 .sorted()
                 .toArray();
-        for (Object name : sortedNames) {
-            System.out.println(name);
-        }
+        System.out.println(Arrays.toString(sortedNames));
     }
 }
