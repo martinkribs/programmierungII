@@ -7,15 +7,4 @@ public class RubberDuck extends Duck {
 		System.out.println("This is a toy duck made of rubber.");
 	}
 	
-	@Override
-	public void quack() {
-		System.out.println("Squeaking");
-	}
-
-	@Override
-	public void fly() {
-		System.out.println("Fly");
-	}
-
-	
 }
