@@ -1,4 +1,4 @@
-package Entwurfsmuster.Strategy.Beispiele.DuckSimStart;
+package Entwurfsmuster.Strategy.Uebungen.Duck;
 
 public class Quietschen implements Quackable {
 
