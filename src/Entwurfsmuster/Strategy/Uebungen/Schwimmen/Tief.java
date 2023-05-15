@@ -1,4 +1,4 @@
-package Entwurfsmuster.Strategy.Uebungen.Fliegen;
+package Entwurfsmuster.Strategy.Uebungen.Schwimmen;
 
 public class Tief implements Flyable{
 
