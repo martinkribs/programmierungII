@@ -7,5 +7,6 @@ public class TestObserver {
         new Forscher(pingu, "Peter");
 
         pingu.setAktion("schwimmt");
+        pingu.setAktion("watschelt");
     }
 }
