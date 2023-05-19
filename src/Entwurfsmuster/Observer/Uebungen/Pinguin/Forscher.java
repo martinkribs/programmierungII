@@ -1,4 +1,4 @@
-package Entwurfsmuster.Observer.Beispiele;
+package Entwurfsmuster.Observer.Uebungen.Pinguin;
 
 public class Forscher implements Beobachter {
 

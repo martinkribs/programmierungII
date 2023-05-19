@@ -1,4 +1,4 @@
-package Entwurfsmuster.Observer.Uebungen;
+package Entwurfsmuster.Observer.Uebungen.WeatherStation;
 
 public interface Subject {
     void registerDisplay(Observer display);

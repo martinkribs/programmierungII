@@ -1,4 +1,4 @@
-package Entwurfsmuster.Observer.Beispiele;
+package Entwurfsmuster.Observer.Uebungen.Pinguin;
 
 public class TestObserver {
     public static void main(String[] args) {

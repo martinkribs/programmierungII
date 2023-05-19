@@ -1,4 +1,4 @@
-package Entwurfsmuster.Observer.Uebungen;
+package Entwurfsmuster.Observer.Uebungen.WeatherStation;
 
 public class TestWeatherData {
     public static void main(String[] args) {
