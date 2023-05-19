@@ -10,14 +10,17 @@ public class WeatherStation implements Subject{
 
     private float pressure;
 
-    public float[] getWeather(){
-        return new float[] {
-            this.temperature,
-            this.pressure,
-            this.humidity
-        };
+    public float getTemperature(){
+        return this.temperature;
     }
-        
+
+    public float getHumidity(){
+        return this.humidity;
+    }
+
+    public float getPressure(){
+        return this.pressure;
+    }   
 
     public void setWeather(float temperature, float humidity, float pressure){
         this.temperature = temperature;

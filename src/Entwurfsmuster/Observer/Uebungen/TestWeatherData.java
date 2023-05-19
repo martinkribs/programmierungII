@@ -3,6 +3,8 @@ package Entwurfsmuster.Observer.Uebungen;
 public class TestWeatherData {
     public static void main(String[] args) {
         WeatherStation weatherStation = new WeatherStation();
-        weatherStation.setWeather(0, 0, 0);
+        new Display(weatherStation,"1");
+        new Display(weatherStation,"2");
+        weatherStation.setWeather(10, 50, 10);
     }
 }
