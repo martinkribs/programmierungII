@@ -1,4 +1,4 @@
-package Entwurfsmuster.Observer.Uebungen.WeatherStation;
+package Entwurfsmuster.Observer.Uebungen.WeatherStationPull;
 
 import java.util.ArrayList;
 

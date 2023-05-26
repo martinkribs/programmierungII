@@ -1,4 +1,4 @@
-package Entwurfsmuster.Observer.Uebungen.WeatherStation;
+package Entwurfsmuster.Observer.Uebungen.WeatherStationPush;
 
 public class Display implements Observer{
 
