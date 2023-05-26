@@ -45,7 +45,7 @@ public class WeatherStation implements Subject{
     @Override
     public void informDisplays() {
         for(Observer display : this.displays){
-            display.measurementChanged();
+            display.measurementChanged(this.temperature,this.humidity,this.pressure);
         }
     }
     

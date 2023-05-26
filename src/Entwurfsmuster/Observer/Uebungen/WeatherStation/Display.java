@@ -2,23 +2,19 @@ package Entwurfsmuster.Observer.Uebungen.WeatherStation;
 
 public class Display implements Observer{
 
-    WeatherStation weatherStation;
-
     String name;
 
-    public Display(WeatherStation weatherStation, String name){
-        this.weatherStation = weatherStation;
+    public Display(String name){
         this.name = name;
-        weatherStation.registerDisplay(this);
     }
 
     @Override
-    public void measurementChanged() {
+    public void measurementChanged(float temperature, float humidity, float pressure) {
         System.out.println("_______________________________________");
         System.out.println("Wetterstation: " +this.name);
-        System.out.println("Temperatur: "+ weatherStation.getTemperature());
-        System.out.println("Feuchtigkeit: "+ weatherStation.getHumidity());
-        System.out.println("Druck: "+ weatherStation.getPressure());
+        System.out.println("Temperatur: "+ temperature);
+        System.out.println("Feuchtigkeit: "+ humidity);
+        System.out.println("Druck: "+ pressure);
         System.out.println("_______________________________________");
     }
     

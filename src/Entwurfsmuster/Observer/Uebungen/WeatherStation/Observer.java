@@ -1,5 +1,5 @@
 package Entwurfsmuster.Observer.Uebungen.WeatherStation;
 
 public interface Observer {
-    void measurementChanged();
+    void measurementChanged(float temperature, float humidity, float pressure);
 }
