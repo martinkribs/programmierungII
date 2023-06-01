@@ -1,4 +1,4 @@
-package Klausur.AktienInfo;
+package EndUebung.AktienInfo;
 
 public interface Aktie {
     void addObserver(Observer ob);

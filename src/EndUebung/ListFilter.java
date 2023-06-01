@@ -1,4 +1,4 @@
-package Klausur;
+package EndUebung;
 
 import java.util.ArrayList;
 import java.util.List;

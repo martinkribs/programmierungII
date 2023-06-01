@@ -1,4 +1,4 @@
-package Klausur;
+package EndUebung;
 
 import java.util.HashMap;
 import java.util.List;

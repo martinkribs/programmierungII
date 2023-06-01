@@ -1,4 +1,4 @@
-package Klausur;
+package EndUebung;
 
 import java.io.File;
 import java.io.FileNotFoundException;

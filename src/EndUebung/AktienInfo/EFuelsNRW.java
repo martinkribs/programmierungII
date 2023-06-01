@@ -1,4 +1,4 @@
-package Klausur.AktienInfo;
+package EndUebung.AktienInfo;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -1,4 +1,4 @@
-package Klausur.Moebel;
+package EndUebung.Moebel;
 
 public abstract class Furniture {
     protected String description;
