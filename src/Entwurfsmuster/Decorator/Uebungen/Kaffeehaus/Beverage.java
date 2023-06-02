@@ -17,6 +17,12 @@ public abstract class Beverage {
 
 	private boolean whip;
 
+	private double milkCost = 1.5;
+
+	private double soyCost = 1.5;
+
+	private double mochaCost = 1.5;
+
 	private List<Zutat> condiments = new ArrayList<>();
 
 	public Beverage(String description, double price) {
@@ -43,7 +49,13 @@ public abstract class Beverage {
 	public double cost() {
 		double condimentCost = 0.0;
 		if (hasMilk()) {
-			condimentCost += 0.1;
+			condimentCost += milkCost;
+		}
+		if (hasSoy()) {
+			condimentCost += soyCost;
+		}
+		if (hasMocha()) {
+			condimentCost += mochaCost;
 		}
 		return condimentCost;
 	}
@@ -77,7 +89,7 @@ public abstract class Beverage {
 	}
 
 	private void setWhip(boolean whip) {
-		this.mocha = whip;
+		this.whip = whip;
 	}
 
 	public String exportDescription() {
