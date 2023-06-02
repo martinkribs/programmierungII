@@ -6,4 +6,7 @@ public class DarkRoast extends Beverage {
 		super("Hervorragende dunkle Röstung", 2.99);
 	}
 
+	public double cost(){
+		return 1.99 + super.cost();
+	}
 }

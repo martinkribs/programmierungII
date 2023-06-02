@@ -4,10 +4,20 @@ import java.util.ArrayList;
 import java.util.List;
 
 public abstract class Beverage {
-	
+
 	protected String description;
+
 	protected double price;
-	private List<Zutat> condiments = new ArrayList<>();	
+
+	private boolean milk;
+
+	private boolean soy;
+
+	private boolean mocha;
+
+	private boolean whip;
+
+	private List<Zutat> condiments = new ArrayList<>();
 
 	public Beverage(String description, double price) {
 		this.description = description;
@@ -26,19 +36,53 @@ public abstract class Beverage {
 		return condiments;
 	}
 
-	/* iterates over the condiment list, gets the respective prices and adds that 
-	to a total cost which then is returned */
+	/*
+	 * iterates over the condiment list, gets the respective prices and adds that
+	 * to a total cost which then is returned
+	 */
 	public double cost() {
-		double cost = this.price;
-		for(Zutat condiment : condiments){
-			cost += condiment.getPreis();
+		double condimentCost = 0.0;
+		if (hasMilk()) {
+			condimentCost += 0.1;
 		}
-		return cost;
+		return condimentCost;
+	}
+
+	private boolean hasMilk() {
+		return this.milk;
+	}
+
+	private void setMilk(boolean milk) {
+		this.milk = milk;
+	}
+
+	private boolean hasSoy() {
+		return this.soy;
+	}
+
+	private void setSoy(boolean soy) {
+		this.soy = soy;
+	}
+
+	private boolean hasMocha() {
+		return this.mocha;
+	}
+
+	private void setMocha(boolean mocha) {
+		this.mocha = mocha;
+	}
+
+	private boolean hasWhip() {
+		return this.whip;
+	}
+
+	private void setWhip(boolean whip) {
+		this.mocha = whip;
 	}
 
 	public String exportDescription() {
 		String description = this.description;
-		for(Zutat condiment : condiments){
+		for (Zutat condiment : condiments) {
 			description += condiment.getBeschreibung();
 		}
 		return description;
@@ -48,12 +92,10 @@ public abstract class Beverage {
 		return this.description;
 	}
 
-
 	public double getPreis() {
 		return this.price;
 	}
 
 }
-
 
 // :)

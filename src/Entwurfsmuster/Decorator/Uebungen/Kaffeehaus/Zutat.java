@@ -1,4 +1,4 @@
-package Entwurfsmuster.Decorator.Beispiele;
+package Entwurfsmuster.Decorator.Uebungen.Kaffeehaus;
 
 public interface Zutat {
     double getPreis();
