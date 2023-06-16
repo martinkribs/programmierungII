@@ -2,7 +2,7 @@ package EndUebung;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.function.Predicate;
+//import java.util.function.Predicate;
 
 public class ListFilter {
     public static void main(String[] args) {
@@ -11,11 +11,11 @@ public class ListFilter {
 		System.out.println("Originale Liste: ");
 		list.forEach(System.out::println);
 
-        Predicate<Integer> kriterium =  n -> n > 10;
-        List<Integer> newList = list.stream().filter(kriterium).toList();
+        //Predicate<Integer> kriterium =  n -> n > 10;
+        //List<Integer> newList = list.stream().filter(kriterium).toList();
 
         // Was fällt beim Ergebnis auf? Wo liegt der Fehler?
 		System.out.println("Gefilterte Liste: ");
-		newList.forEach(System.out::println);
+		//newList.forEach(System.out::println);
 	}
 }

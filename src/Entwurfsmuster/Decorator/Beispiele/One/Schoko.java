@@ -1,4 +1,4 @@
-package Entwurfsmuster.Decorator.Beispiele;
+package Entwurfsmuster.Decorator.Beispiele.One;
 
 public class Schoko implements Zutat {
     private double preis = 0.25;

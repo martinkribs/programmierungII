@@ -1,4 +1,4 @@
-package Entwurfsmuster.Decorator.Beispiele;
+package Entwurfsmuster.Decorator.Beispiele.One;
 
 public class TestCoffees {
 	public static void main(String[] args) {

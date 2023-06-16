@@ -1,10 +1,10 @@
-package Entwurfsmuster.Decorator.Beispiele;
+package Entwurfsmuster.Decorator.Beispiele.One;
 
-public class Sahne implements Zutat {
-    private double preis = 0.420;
-    private String description = ", Sahne, echt lecker";
+public class Milch implements Zutat {
+    private double preis = 0.10;
+    private String description = ", mit Milch, keks.de";
 
-    public Sahne() {
+    public Milch() {
     }
 
     @Override
