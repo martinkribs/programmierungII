@@ -11,8 +11,6 @@ public class TestCoffees {
 		CondimentDecorator normalerName123 = new Whip(dRwMilk2);
 		// Beverage dRwBlack = new Schwarz();
 		// System.out.println(dRwBlack.cost() + " EUR");
-
-		// Jungs es ist Debugging Only!!!!!!!!!!!!!!!!!!!! Ich brauche Wochenende
 		System.out.println(myDarkRoast.cost() + " EUR, " + myDarkRoast.getDescription()); 
 		System.out.println(dRwMilk.cost() + " EUR, " + dRwMilk.getDescription()); 
 		System.out.println(dRwMilk2.cost() + " EUR, " + dRwMilk2.getDescription());

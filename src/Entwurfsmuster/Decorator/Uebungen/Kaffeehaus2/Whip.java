@@ -2,9 +2,6 @@ package Entwurfsmuster.Decorator.Uebungen.Kaffeehaus2;
 
 public class Whip extends CondimentDecorator
 {
-    // double price = 0.25;
-    // String description = " whippety whip";
-    
     public Whip(Beverage beverage)
     {
         super(beverage);

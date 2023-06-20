@@ -9,16 +9,4 @@ public class Milk extends CondimentDecorator
         this.price = 0.10;
 
     }
-    // kann hier raus, weil (jetzt) von oben geerbt:
-    // @Override
-    // public double cost()
-    // {
-    //     return beverage.cost() + this.price;
-    // }
-
-    // @Override
-    // public String getDescription()
-    // {
-    //     return beverage.getDescription() + ", " + this.description;
-    // }
 }
