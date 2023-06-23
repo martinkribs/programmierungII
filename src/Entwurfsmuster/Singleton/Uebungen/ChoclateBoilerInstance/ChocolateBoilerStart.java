@@ -13,6 +13,7 @@ public class ChocolateBoilerStart {
 	public static ChocolateBoilerStart getInstance(){
 		if (chocolateBoiler == null){
 			chocolateBoiler = new ChocolateBoilerStart();
+			System.out.println("Erstelle neuen");
 		}
 		return chocolateBoiler;
 	}
@@ -35,7 +36,10 @@ public class ChocolateBoilerStart {
 	public void boil() {
 		if (!isEmpty() && !isBoiled()) {
 			// bring the contents to a boil
+			System.out.println("kochen");
 			boiled = true;
+		} else {
+			System.out.println("nicht gefüllt");
 		}
 	}
   
