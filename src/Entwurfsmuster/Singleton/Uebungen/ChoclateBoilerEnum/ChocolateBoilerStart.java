@@ -1,15 +1,11 @@
 package Entwurfsmuster.Singleton.Uebungen.ChoclateBoilerEnum;
 
 public enum ChocolateBoilerStart {
-    INSTANCE;
+
+    UNIQUE_INSTANCE;
 
     private boolean empty;
     private boolean boiled;
-
-    private ChocolateBoilerStart() {
-        empty = true;
-        boiled = false;
-    }
 
     public void fill() {
         if (isEmpty()) {
@@ -28,9 +24,12 @@ public enum ChocolateBoilerStart {
 
     public void boil() {
         if (!isEmpty() && !isBoiled()) {
-            // bring the contents to a boil
-            boiled = true;
-        }
+			// bring the contents to a boil
+			System.out.println("kochen");
+			boiled = true;
+		} else {
+			System.out.println("nicht gefüllt");
+		}
     }
 
     public boolean isEmpty() {
