@@ -4,8 +4,8 @@ public enum ChocolateBoilerStart {
 
     UNIQUE_INSTANCE;
 
-    private boolean empty;
-    private boolean boiled;
+    private boolean empty = true;
+    private boolean boiled = false;
 
     public void fill() {
         if (isEmpty()) {
@@ -28,7 +28,7 @@ public enum ChocolateBoilerStart {
 			System.out.println("kochen");
 			boiled = true;
 		} else {
-			System.out.println("nicht gefüllt");
+			System.out.println("nicht gefüllt oder schon gekocht");
 		}
     }
 
