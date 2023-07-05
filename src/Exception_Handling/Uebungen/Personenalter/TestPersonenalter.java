@@ -1,4 +1,4 @@
-package Exception_Handling.Uebungen;
+package Exception_Handling.Uebungen.Personenalter;
 
 public class TestPersonenalter {
     public static void main(String[] args) throws OutOfRangeException {
