@@ -7,7 +7,7 @@ public abstract class Beverage {
 	
 	protected String description;
 	protected double price;
-	private List<Zutat> condiments = new ArrayList<>();	
+	private ArrayList<Zutat> condiments = new ArrayList<>();
 
 	public Beverage(String description, double price) {
 		this.description = description;
