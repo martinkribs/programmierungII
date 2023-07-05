@@ -1,4 +1,4 @@
-package EndUebung.Moebel;
+package EndUebung.DC;
 
 public abstract class Furniture {
     protected String description;
