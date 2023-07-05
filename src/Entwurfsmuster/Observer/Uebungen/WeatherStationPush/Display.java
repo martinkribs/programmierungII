@@ -8,7 +8,6 @@ public class Display implements Observer{
         this.name = name;
     }
 
-    @Override
     public void measurementChanged(float temperature, float humidity, float pressure) {
         System.out.println("_______________________________________");
         System.out.println("Wetterstation: " +this.name);

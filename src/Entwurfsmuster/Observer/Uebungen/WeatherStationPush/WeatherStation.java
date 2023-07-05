@@ -10,6 +10,8 @@ public class WeatherStation implements Subject{
 
     private float pressure;
 
+    private ArrayList<Observer> displays = new ArrayList<>();
+
     public float getTemperature(){
         return this.temperature;
     }
@@ -28,9 +30,6 @@ public class WeatherStation implements Subject{
         this.pressure = pressure;
         informDisplays();
     }
-        
-
-    private ArrayList<Observer> displays = new ArrayList<Observer>();
 
     @Override
     public void registerDisplay(Observer display) {
