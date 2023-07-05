@@ -13,35 +13,21 @@ public class Artikel {
         this.lagebestand = lagebestand;
     }
 
-    public int getNummer() {
-        return Nummer;
-    }
-
-    public void setNummer(int nummer) {
-        Nummer = nummer;
-    }
-
     public double getPreis() {
         return Preis;
     }
 
-    public void setPreis(double preis) {
-        Preis = preis;
-    }
 
     public String getWarengruppe() {
         return warengruppe;
-    }
-
-    public void setWarengruppe(String warengruppe) {
-        this.warengruppe = warengruppe;
     }
 
     public int getLagebestand() {
         return lagebestand;
     }
 
-    public void setLagebestand(int lagebestand) {
-        this.lagebestand = lagebestand;
+    @Override
+    public String toString() {
+        return "Artikelnummer: " + this.Nummer + " der Warengruppe: " + this.warengruppe + " hat den Preis: " + this.Preis + " und ist noch " + this.lagebestand + " mal da.";
     }
 }
