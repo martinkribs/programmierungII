@@ -1,4 +1,4 @@
-package EndUebung.AktienInfo;
+package EndUebung.AktienInfoStudents;
 
 import java.util.ArrayList;
 import java.util.List;

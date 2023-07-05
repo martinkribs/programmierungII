@@ -1,4 +1,4 @@
-package EndUebung.AktienInfo;
+package EndUebung.AktienInfoStudents;
 
 public class Aktionaer implements Observer {
     private double lastPrice;

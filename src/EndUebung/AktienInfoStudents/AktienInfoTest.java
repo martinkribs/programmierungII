@@ -1,4 +1,4 @@
-package EndUebung.AktienInfo;
+package EndUebung.AktienInfoStudents;
 
 public class AktienInfoTest {
     public static void main(String[] args) {
