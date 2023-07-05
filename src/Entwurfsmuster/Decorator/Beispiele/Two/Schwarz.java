@@ -2,7 +2,6 @@ package Entwurfsmuster.Decorator.Beispiele.Two;
 
 public class Schwarz extends Beverage
 {
-    private String description = "Dunkel dunkel dunkel. Nom nom nom.";
     
     public Schwarz()
     {

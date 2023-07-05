@@ -14,6 +14,7 @@ public class ReadFile {
         // File input stream
         BufferedInputStream fileInputStream = new BufferedInputStream(fileStream);
         System.out.println(new String(fileInputStream.readAllBytes(), StandardCharsets.ISO_8859_1));
+        fileInputStream.close();
 
         //load File
         File zipFile = new File(path + "sample.zip");
@@ -22,5 +23,6 @@ public class ReadFile {
         // zip input stream
         ZipInputStream zipInputStream = new ZipInputStream(zipStream);
         System.out.println(new String(zipInputStream.readAllBytes(), StandardCharsets.ISO_8859_1));
+        zipInputStream.close();
     }
 }

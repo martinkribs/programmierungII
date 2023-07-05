@@ -15,8 +15,6 @@ public abstract class Beverage {
 
 	private boolean mocha;
 
-	private boolean whip;
-
 	private double milkCost = 1.5;
 
 	private double soyCost = 1.5;
@@ -64,32 +62,14 @@ public abstract class Beverage {
 		return this.milk;
 	}
 
-	private void setMilk(boolean milk) {
-		this.milk = milk;
-	}
 
 	private boolean hasSoy() {
 		return this.soy;
 	}
 
-	private void setSoy(boolean soy) {
-		this.soy = soy;
-	}
 
 	private boolean hasMocha() {
 		return this.mocha;
-	}
-
-	private void setMocha(boolean mocha) {
-		this.mocha = mocha;
-	}
-
-	private boolean hasWhip() {
-		return this.whip;
-	}
-
-	private void setWhip(boolean whip) {
-		this.whip = whip;
 	}
 
 	public String exportDescription() {
