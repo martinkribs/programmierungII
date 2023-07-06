@@ -4,7 +4,7 @@ public class Rechts implements Abbiegen {
 
     @Override
     public void abbiegen() {
-        System.out.println(" biegt rechts ab");
+        System.out.print(" biegt rechts ab");
     }
     
 }

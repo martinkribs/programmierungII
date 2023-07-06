@@ -4,7 +4,7 @@ public class Langsam implements Beschleunigen {
 
     @Override
     public void beschleunigen() {
-        System.out.println(" beschleunigt langsam,");
+        System.out.print(" beschleunigt langsam");
     }
     
 }

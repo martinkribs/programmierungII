@@ -8,11 +8,13 @@ public class PersonenTest {
 
 	public static void main(String[] args) {
 		Auto auto = new Auto();
+		Person peter = new Person("Peter");
+		peter.setFahrzeug(auto);
+		peter.fahren();
+		peter.bremsen();
+
 		Fahrrad fahrrad = new Fahrrad();
-		System.out.print("Peter fährt Auto und es ");
-		auto.beschleunigen();
-		auto.bremsen();
-		System.out.print("Peter fährt Fahrrad und es ");
+		peter.setFahrzeug(fahrrad);
 		fahrrad.beschleunigen();
 		fahrrad.abbiegen();
 	}
